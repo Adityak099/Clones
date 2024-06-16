@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  /* background-color: burlywood; */
+  border-bottom: 2px solid #daddad;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.nav-part2 {
+  display: flex;
+  padding: 0px 2vw;
+  /* background-color: yellow; */
+  gap: 4vw;
+}
+.nav button {
+  background-color: #ff735c;
+  color: #fff;
+  padding: 0.7vw 1.4vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav h2 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.nav h4 {
+  font-size: 1.2vw;
+  margin-top: 0.6vw;
+}
+.nav i {
+  font-weight: 700;
+  display: none;
+}
+
+.content {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  /* background-color: #e1c32b76; */
+  padding: 5vw 3vw;
+}
+.left h1 {
+  font-size: 5vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 4.4vw;
+}
+.left h1 span {
+  color: #ff735c;
+}
+
+.left p {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #f20101;
+  width: 80%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
+.content button {
+  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  background-color: #ff735c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  /* background-color: #e1c32b76; */
+}
+
+.right img {
+    margin-top: 1vw;
+    scale: .9;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    background-color: aqua;
+    color: #fff;
+    padding: 0 6vw;
+    height: 60px;
+  }
+  .nav h2 {
+    font-size: 6vw;
+  }
+
+  .nav h4 {
+    font-size: 4vw;
+    display: none;
+  }
+
+  .nav i {
+    display: block;
+    font-size: 2vw;
+  }
+}
